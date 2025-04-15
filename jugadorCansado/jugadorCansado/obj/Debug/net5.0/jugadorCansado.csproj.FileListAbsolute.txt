@@ -1,0 +1,16 @@
+C:\Users\Punto Digital\source\repos\jugadorCansado\jugadorCansado\obj\Debug\net5.0\jugadorCansado.csproj.AssemblyReference.cache
+C:\Users\Punto Digital\source\repos\jugadorCansado\jugadorCansado\obj\Debug\net5.0\jugadorCansado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Punto Digital\source\repos\jugadorCansado\jugadorCansado\obj\Debug\net5.0\jugadorCansado.AssemblyInfoInputs.cache
+C:\Users\Punto Digital\source\repos\jugadorCansado\jugadorCansado\obj\Debug\net5.0\jugadorCansado.AssemblyInfo.cs
+C:\Users\Punto Digital\source\repos\jugadorCansado\jugadorCansado\obj\Debug\net5.0\jugadorCansado.csproj.CoreCompileInputs.cache
+C:\Users\Punto Digital\source\repos\jugadorCansado\jugadorCansado\bin\Debug\net5.0\jugadorCansado.exe
+C:\Users\Punto Digital\source\repos\jugadorCansado\jugadorCansado\bin\Debug\net5.0\jugadorCansado.deps.json
+C:\Users\Punto Digital\source\repos\jugadorCansado\jugadorCansado\bin\Debug\net5.0\jugadorCansado.runtimeconfig.json
+C:\Users\Punto Digital\source\repos\jugadorCansado\jugadorCansado\bin\Debug\net5.0\jugadorCansado.runtimeconfig.dev.json
+C:\Users\Punto Digital\source\repos\jugadorCansado\jugadorCansado\bin\Debug\net5.0\jugadorCansado.dll
+C:\Users\Punto Digital\source\repos\jugadorCansado\jugadorCansado\bin\Debug\net5.0\ref\jugadorCansado.dll
+C:\Users\Punto Digital\source\repos\jugadorCansado\jugadorCansado\bin\Debug\net5.0\jugadorCansado.pdb
+C:\Users\Punto Digital\source\repos\jugadorCansado\jugadorCansado\obj\Debug\net5.0\jugadorCansado.dll
+C:\Users\Punto Digital\source\repos\jugadorCansado\jugadorCansado\obj\Debug\net5.0\ref\jugadorCansado.dll
+C:\Users\Punto Digital\source\repos\jugadorCansado\jugadorCansado\obj\Debug\net5.0\jugadorCansado.pdb
+C:\Users\Punto Digital\source\repos\jugadorCansado\jugadorCansado\obj\Debug\net5.0\jugadorCansado.genruntimeconfig.cache
