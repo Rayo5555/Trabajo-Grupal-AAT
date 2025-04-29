@@ -1,0 +1,16 @@
+C:\Users\Punto Digital\Documents\GitHub\Trabajo-Grupal-AAT\Cuenta Bancaria\Cuenta Bancaria\obj\Debug\net5.0\Cuenta Bancaria.csproj.AssemblyReference.cache
+C:\Users\Punto Digital\Documents\GitHub\Trabajo-Grupal-AAT\Cuenta Bancaria\Cuenta Bancaria\obj\Debug\net5.0\Cuenta Bancaria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Punto Digital\Documents\GitHub\Trabajo-Grupal-AAT\Cuenta Bancaria\Cuenta Bancaria\obj\Debug\net5.0\Cuenta Bancaria.AssemblyInfoInputs.cache
+C:\Users\Punto Digital\Documents\GitHub\Trabajo-Grupal-AAT\Cuenta Bancaria\Cuenta Bancaria\obj\Debug\net5.0\Cuenta Bancaria.AssemblyInfo.cs
+C:\Users\Punto Digital\Documents\GitHub\Trabajo-Grupal-AAT\Cuenta Bancaria\Cuenta Bancaria\obj\Debug\net5.0\Cuenta Bancaria.csproj.CoreCompileInputs.cache
+C:\Users\Punto Digital\Documents\GitHub\Trabajo-Grupal-AAT\Cuenta Bancaria\Cuenta Bancaria\bin\Debug\net5.0\Cuenta Bancaria.exe
+C:\Users\Punto Digital\Documents\GitHub\Trabajo-Grupal-AAT\Cuenta Bancaria\Cuenta Bancaria\bin\Debug\net5.0\Cuenta Bancaria.deps.json
+C:\Users\Punto Digital\Documents\GitHub\Trabajo-Grupal-AAT\Cuenta Bancaria\Cuenta Bancaria\bin\Debug\net5.0\Cuenta Bancaria.runtimeconfig.json
+C:\Users\Punto Digital\Documents\GitHub\Trabajo-Grupal-AAT\Cuenta Bancaria\Cuenta Bancaria\bin\Debug\net5.0\Cuenta Bancaria.runtimeconfig.dev.json
+C:\Users\Punto Digital\Documents\GitHub\Trabajo-Grupal-AAT\Cuenta Bancaria\Cuenta Bancaria\bin\Debug\net5.0\Cuenta Bancaria.dll
+C:\Users\Punto Digital\Documents\GitHub\Trabajo-Grupal-AAT\Cuenta Bancaria\Cuenta Bancaria\bin\Debug\net5.0\ref\Cuenta Bancaria.dll
+C:\Users\Punto Digital\Documents\GitHub\Trabajo-Grupal-AAT\Cuenta Bancaria\Cuenta Bancaria\bin\Debug\net5.0\Cuenta Bancaria.pdb
+C:\Users\Punto Digital\Documents\GitHub\Trabajo-Grupal-AAT\Cuenta Bancaria\Cuenta Bancaria\obj\Debug\net5.0\Cuenta Bancaria.dll
+C:\Users\Punto Digital\Documents\GitHub\Trabajo-Grupal-AAT\Cuenta Bancaria\Cuenta Bancaria\obj\Debug\net5.0\ref\Cuenta Bancaria.dll
+C:\Users\Punto Digital\Documents\GitHub\Trabajo-Grupal-AAT\Cuenta Bancaria\Cuenta Bancaria\obj\Debug\net5.0\Cuenta Bancaria.pdb
+C:\Users\Punto Digital\Documents\GitHub\Trabajo-Grupal-AAT\Cuenta Bancaria\Cuenta Bancaria\obj\Debug\net5.0\Cuenta Bancaria.genruntimeconfig.cache
