@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace AdministracionSanatorio
 {
-    class Doctor
+    public class Doctor
     {
         public string nombreCompleto, especialidad;
-        public int matricula;
+        public string matricula;
         public bool disponible;
 
-        public Doctor(string nombreCompleto, string especialidad, int matricula, bool disponible = true)
+        public Doctor(string nombreCompleto, string matricula, string especialidad, bool disponible = true)
         {
             this.nombreCompleto = nombreCompleto;
             this.especialidad = especialidad;

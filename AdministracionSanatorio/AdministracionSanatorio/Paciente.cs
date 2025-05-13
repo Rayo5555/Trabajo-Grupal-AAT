@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace AdministracionSanatorio
 {
-    class Paciente
+    public class Paciente
     {
-        public int DNI, telefono;
-        public string nombreCompleto;
+        public int cobertura;
+        public string nombreCompleto, nombreObra, DNI, telefono;
         public Intervencion[] operaciones;
-
-        public Paciente(int DNI, string nombreCompleto, int telefono, Intervencion[] operaciones)
+        public Paciente(string DNI, string nombreCompleto, string telefono, string nombreObra = null, int cobertura)
         {
             this.DNI = DNI;
             this.nombreCompleto = nombreCompleto;
             this.telefono = telefono;
-            this.operaciones = operaciones;
+            this.nombreObra = nombreObra;
+            this.cobertura = cobertura;
         }
     }
 }

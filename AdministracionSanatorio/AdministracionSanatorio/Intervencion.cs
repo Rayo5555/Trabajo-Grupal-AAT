@@ -6,28 +6,36 @@ using System.Threading.Tasks;
 
 namespace AdministracionSanatorio
 {
-    class Intervencion
+    public class Intervencion
     {
-        public int codigo;
+        public string codigo;
         public string desc, especialidad;
         public float precio;
+    }
 
-        public Intervencion(int codigo, string desc, string especialidad, float precio)
+    public class IntervencionComun : Intervencion
+    {
+        public IntervencionComun(string codigo, string desc, string especialidad, float precio)
         {
             this.codigo = codigo;
             this.desc = desc;
             this.especialidad = especialidad;
-            this.precio= precio;
+            this.precio = precio;
         }
     }
 
-    class Normal : Intervencion
+    public class IntervencionAltaComplejidad : Intervencion
     {
+        public double adicional;
 
-    }
+        public IntervencionAltaComplejidad(string codigo, string desc, string especialidad, float precio, double adicional)
+        {
+            this.codigo = codigo;
+            this.desc = desc;
+            this.especialidad = especialidad;
+            this.precio = precio;
+            this.adicional = adicional;
+        }
 
-    class Compleja : Intervencion
-    {
-        static double adicional = 0.5;
     }
 }

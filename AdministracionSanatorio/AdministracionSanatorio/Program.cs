@@ -6,7 +6,7 @@ namespace AdministracionSanatorio
     {
         static void Main(string[] args)
         {
-            
+            Hospital hospital = new Hospital();
         }
     }
 }
