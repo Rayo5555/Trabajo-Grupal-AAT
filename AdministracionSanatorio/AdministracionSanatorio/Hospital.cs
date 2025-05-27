@@ -59,15 +59,46 @@ namespace AdministracionSanatorio
             }
         }
 
-        public void asignarIntervencion() { }
-
-        public void costoOperaciones(string DNI) 
-        { 
-            foreach(Paciente paciente in Pacientes)
+        public void asignarIntervencion(string DNI) 
+        {
+            foreach (Paciente paciente in Pacientes)
             {
-                if(paciente.DNI == DNI)
+                if (DNI == paciente.DNI)
                 {
-                    Console.WriteLine(paciente.costoOperacion());
+                    Console.WriteLine("Operaciones disponibles");
+                    foreach (Intervencion intervencion in Intervenciones)
+                    {
+                        Console.WriteLine("Codigo: " + intervencion.codigo + " Descripcion: " + intervencion.desc);
+                    }
+                    while (true)
+                    {
+                        string code = Console.ReadLine("Ingrese un codigo: ");
+                        foreach (Intervencion intervencion in Intervenciones)
+                        {
+                            if (code == intervencion.codigo)
+                            {
+                                Console.WriteLine("Ingrese la fecha (formato DD/MM/YYYY): ");
+                                string fecha = Console.ReadLine();
+                                DateTime fecha = DateTime.Parse(fecha);
+                                Console.WriteLine("Esta abonado (si/no): ");
+                                string condicionPago = Console.ReadLine();
+                                Console.WriteLine("Ingrese el nombre del medico: ");
+                                string nombre = Console.ReadLine();
+                                while (true)
+                                {
+                                    foreach (Doctor doctor in Doctores)
+                                    {
+                                        if (nombre == doctor.nombreCompleto)
+                                        {
+
+                                        }
+                                    }
+                                }
+                                Console.WriteLine("no se encontro el codigo ");
+                            }
+                        }
+                    }
+                    Console.WriteLine("No se encontro el DNI en el sistema");
                 }
             }
         }
