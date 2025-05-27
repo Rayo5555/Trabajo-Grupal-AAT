@@ -7,6 +7,7 @@ namespace AdministracionSanatorio
         static void Main(string[] args)
         {
             Hospital hospital = new Hospital();
+            hospital.costoOperaciones("29222333");
         }
     }
 }

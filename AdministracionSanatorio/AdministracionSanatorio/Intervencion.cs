@@ -11,6 +11,11 @@ namespace AdministracionSanatorio
         public string codigo;
         public string desc, especialidad;
         public float precio;
+
+        public virtual double costo() 
+        {
+            return (double)precio;
+        }
     }
 
     public class IntervencionComun : Intervencion
@@ -21,6 +26,11 @@ namespace AdministracionSanatorio
             this.desc = desc;
             this.especialidad = especialidad;
             this.precio = precio;
+        }
+
+        public override double costo()
+        {
+            return (double)precio;
         }
     }
 
@@ -37,5 +47,9 @@ namespace AdministracionSanatorio
             this.adicional = adicional;
         }
 
+        public override double costo()
+        {
+            return (precio+(precio*adicional));
+        }
     }
 }

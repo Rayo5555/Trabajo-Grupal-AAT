@@ -58,6 +58,19 @@ namespace AdministracionSanatorio
                 Console.WriteLine(paciente.nombreCompleto);
             }
         }
+
+        public void asignarIntervencion() { }
+
+        public void costoOperaciones(string DNI) 
+        { 
+            foreach(Paciente paciente in Pacientes)
+            {
+                if(paciente.DNI == DNI)
+                {
+                    Console.WriteLine(paciente.costoOperacion());
+                }
+            }
+        }
     }
 
 }
