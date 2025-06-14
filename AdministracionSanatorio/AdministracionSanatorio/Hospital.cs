@@ -53,54 +53,88 @@ namespace AdministracionSanatorio
 
         public void listarPacientes()
         {
-            foreach(Paciente paciente in Pacientes)
+            foreach (Paciente paciente in Pacientes)
             {
                 Console.WriteLine(paciente.nombreCompleto);
             }
         }
 
-        public void asignarIntervencion(string DNI) 
+        public void asignarIntervencion(string DNI)
         {
+            Paciente pacienteEncontrado = null;
             foreach (Paciente paciente in Pacientes)
             {
                 if (DNI == paciente.DNI)
                 {
-                    Console.WriteLine("Operaciones disponibles");
-                    foreach (Intervencion intervencion in Intervenciones)
-                    {
-                        Console.WriteLine("Codigo: " + intervencion.codigo + " Descripcion: " + intervencion.desc);
-                    }
-                    while (true)
-                    {
-                        string code = Console.ReadLine("Ingrese un codigo: ");
-                        foreach (Intervencion intervencion in Intervenciones)
-                        {
-                            if (code == intervencion.codigo)
-                            {
-                                Console.WriteLine("Ingrese la fecha (formato DD/MM/YYYY): ");
-                                string fecha = Console.ReadLine();
-                                DateTime fecha = DateTime.Parse(fecha);
-                                Console.WriteLine("Esta abonado (si/no): ");
-                                string condicionPago = Console.ReadLine();
-                                Console.WriteLine("Ingrese el nombre del medico: ");
-                                string nombre = Console.ReadLine();
-                                while (true)
-                                {
-                                    foreach (Doctor doctor in Doctores)
-                                    {
-                                        if (nombre == doctor.nombreCompleto)
-                                        {
-
-                                        }
-                                    }
-                                }
-                                Console.WriteLine("no se encontro el codigo ");
-                            }
-                        }
-                    }
-                    Console.WriteLine("No se encontro el DNI en el sistema");
+                    pacienteEncontrado = paciente;
+                    break;
                 }
             }
+            if (pacienteEncontrado == null)
+            {
+                Console.WriteLine("No se encontro el DNI en el sistema");
+                return;
+            }
+
+            Console.WriteLine("Operaciones disponibles");
+            foreach (Intervencion intervencion in Intervenciones)
+            {
+                Console.WriteLine("Codigo: " + intervencion.codigo + " Descripcion: " + intervencion.desc);
+            }
+            Intervencion intervencionAsignada = null;
+            Doctor doctorAsignado = null;
+            bool pagado = false;
+            DateTime fechaIntervencion = DateTime.MinValue;
+            while (intervencionAsignada == null)
+            {
+                Console.WriteLine("Ingrese un codigo: ");
+                string code = Console.ReadLine();
+                foreach (Intervencion intervencion in Intervenciones)
+                {
+                    if (code == intervencion.codigo)
+                    {
+                        intervencionAsignada = intervencion;
+                        Console.WriteLine("Ingrese la fecha (formato DD/MM/YYYY): ");
+                        string fecha = Console.ReadLine();
+                        fechaIntervencion = DateTime.Parse(fecha);
+                        Console.WriteLine("Esta abonado (si/no): ");
+                        string condicionPago = Console.ReadLine();
+                        if (condicionPago == "si")
+                        {
+                            pagado = true;
+                        }
+                        Console.WriteLine("Ingrese el nombre del medico: ");
+                        while (doctorAsignado == null)
+                        {
+                            string nombre = Console.ReadLine();
+                            foreach (Doctor doctor in Doctores)
+                            {
+                                if (nombre == doctor.nombreCompleto)
+                                {
+                                    doctorAsignado = doctor;
+                                    break;
+                                }
+                            }
+                            Console.WriteLine("Medico no encontrado, por favor ingrese otro: ");
+                        }
+                        break;
+                    }
+                }
+                if (intervencionAsignada == null)
+                {
+                    Console.WriteLine("no se encontro el codigo ");
+                }
+            }
+
+            IntervencionAsignada nuevaIntervencion = new IntervencionAsignada(
+                listaOperaciones: intervencionAsignada,
+                medico: doctorAsignado.nombreCompleto,
+                fecha: fechaIntervencion,
+                pagado: pagado
+            );
+
+            pacienteEncontrado.operaciones.Add(nuevaIntervencion);
+            Console.WriteLine("Intervención asignada correctamente");
         }
     }
 
