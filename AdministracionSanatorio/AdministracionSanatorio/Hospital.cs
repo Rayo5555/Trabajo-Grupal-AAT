@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Schema;
 
 
 namespace AdministracionSanatorio
@@ -109,13 +110,13 @@ namespace AdministracionSanatorio
                             string nombre = Console.ReadLine();
                             foreach (Doctor doctor in Doctores)
                             {
-                                if (nombre == doctor.nombreCompleto)
+                                if (nombre == doctor.nombreCompleto && doctor.especialidad == intervencionAsignada.especialidad)
                                 {
                                     doctorAsignado = doctor;
                                     break;
                                 }
                             }
-                            Console.WriteLine("Medico no encontrado, por favor ingrese otro: ");
+                            Console.WriteLine("Medico no encontrado o no especializado en ese área, por favor ingrese otro: ");
                         }
                         break;
                     }
@@ -127,14 +128,29 @@ namespace AdministracionSanatorio
             }
 
             IntervencionAsignada nuevaIntervencion = new IntervencionAsignada(
-                listaOperaciones: intervencionAsignada,
-                medico: doctorAsignado.nombreCompleto,
+                intervencion: intervencionAsignada,
+                medico: doctorAsignado,
                 fecha: fechaIntervencion,
                 pagado: pagado
             );
 
             pacienteEncontrado.operaciones.Add(nuevaIntervencion);
             Console.WriteLine("Intervención asignada correctamente");
+        }
+        public void liquidacionPaciente()
+        {
+            foreach (Paciente paciente in Pacientes)
+            {
+                foreach (IntervencionAsignada intervencionAsignada in paciente.operaciones)
+                {
+                    if (intervencionAsignada.pagado == false)
+                    {
+                        double monto = intervencionAsignada.intervencion.costo() - paciente.cobertura;
+                        Console.WriteLine("Identificador: " + paciente.DNI + " Nombre Completo: " + paciente.nombreCompleto + " Fecha: " + intervencionAsignada.fecha + " Descripcion: " + intervencionAsignada.intervencion.desc);
+                        Console.WriteLine("Nombre del dotor: " + intervencionAsignada.medico.nombreCompleto + " Matrícula: " + intervencionAsignada.medico.matricula + " Monto a abonar: " + monto + " Obra social: " + paciente.nombreObra);
+                    }
+                }
+            }
         }
     }
 

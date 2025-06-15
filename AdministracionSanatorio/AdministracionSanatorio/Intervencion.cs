@@ -49,7 +49,7 @@ namespace AdministracionSanatorio
 
         public override double costo()
         {
-            return (precio+(precio*adicional));
+            return (precio + (precio * adicional));
         }
     }
 }
